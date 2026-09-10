@@ -1,0 +1,63 @@
+{
+  "atualizadoEm": "2026-09-02T00:00:00.000Z",
+  "_obs": "Arquivo de exemplo — será sobrescrito automaticamente pelo GitHub Action (scripts/pull-dados.mjs).",
+  "unidades": {
+    "centro": {
+      "name": "Antenor Thomazi", "page": "1403353129879506",
+      "metaAnual": 340, "atingidoAnual": 76, "novosMeta": 71, "novosFeito": 0,
+      "periods": {
+        "7": [
+          { "name": "MAT2027 — Feed", "fmt": "Feed", "conversas": 6, "semana": 6, "custo": 11.34, "status": "ativo", "publico": ["Conjunto: MAT2027"], "th": 0 }
+        ],
+        "15": [
+          { "name": "MAT2027 — Feed", "fmt": "Feed", "conversas": 16, "semana": 16, "custo": 9.13, "status": "ativo", "publico": ["Conjunto: MAT2027"], "th": 0 },
+          { "name": "Matrículas 2º sem — Reels", "fmt": "Reels", "conversas": 6, "semana": 6, "custo": 6.59, "status": "pausado", "publico": ["Conjunto: Matrículas 2º sem"], "th": 1 }
+        ],
+        "30": [
+          { "name": "MAT2027 — Feed", "fmt": "Feed", "conversas": 16, "semana": 16, "custo": 9.13, "status": "ativo", "publico": ["Conjunto: MAT2027"], "th": 0 },
+          { "name": "Matrículas 2º sem — Reels", "fmt": "Reels", "conversas": 13, "semana": 13, "custo": 7.77, "status": "pausado", "publico": ["Conjunto: Matrículas 2º sem"], "th": 1 },
+          { "name": "Matrículas 2º sem — Sem diferenciais (Menino)", "fmt": "Feed", "conversas": 7, "semana": 7, "custo": 15.53, "status": "pausado", "publico": ["Conjunto: Matrículas 2º sem"], "th": 2 }
+        ]
+      }
+    },
+    "sul": {
+      "name": "Anjinho", "page": "110898225221191",
+      "metaAnual": 360, "atingidoAnual": 93, "novosMeta": 88, "novosFeito": 12,
+      "periods": {
+        "7": [
+          { "name": "MAT2027 — Feed", "fmt": "Feed", "conversas": 7, "semana": 7, "custo": 5.92, "status": "ativo", "publico": ["Mulheres · raio 5 km", "Conjunto: 00 - Mulheres raio 5km"], "th": 0 }
+        ],
+        "15": [
+          { "name": "Matrículas 2º sem — Menina (Visita)", "fmt": "Feed", "conversas": 33, "semana": 33, "custo": 10.14, "status": "pausado", "publico": ["Mulheres · raio 5 km", "Conjunto: 00 - Mulheres raio 5km"], "th": 4 },
+          { "name": "MAT2027 — Feed", "fmt": "Feed", "conversas": 7, "semana": 7, "custo": 5.92, "status": "ativo", "publico": ["Mulheres · raio 5 km", "Conjunto: 00 - Mulheres raio 5km"], "th": 0 }
+        ],
+        "30": [
+          { "name": "Matrículas 2º sem — Menina (Visita)", "fmt": "Feed", "conversas": 33, "semana": 33, "custo": 10.14, "status": "pausado", "publico": ["Mulheres · raio 5 km", "Conjunto: 00 - Mulheres raio 5km"], "th": 4 },
+          { "name": "MAT2027 — Feed", "fmt": "Feed", "conversas": 7, "semana": 7, "custo": 5.92, "status": "ativo", "publico": ["Mulheres · raio 5 km", "Conjunto: 00 - Mulheres raio 5km"], "th": 0 },
+          { "name": "Matrículas 2º sem — Menina (Visita) 2", "fmt": "Feed", "conversas": 1, "semana": 1, "custo": 21.45, "status": "pausado", "publico": ["Mulheres · raio 5 km", "Conjunto: 00 - Mulheres raio 5km"], "th": 2 },
+          { "name": "Matrículas 2º sem — Menina (Contato)", "fmt": "Feed", "conversas": 1, "semana": 1, "custo": 2.75, "status": "pausado", "publico": ["Mulheres · raio 5 km", "Conjunto: 00 - Mulheres raio 5km"], "th": 5 }
+        ]
+      }
+    },
+    "barra": {
+      "name": "Aquas", "page": "402482996539606",
+      "metaAnual": 230, "atingidoAnual": 26, "novosMeta": 56, "novosFeito": 1,
+      "periods": {
+        "7": [
+          { "name": "MAT2027 — Feed (Lançamento)", "fmt": "Feed", "conversas": 8, "semana": 8, "custo": 7.82, "status": "ativo", "publico": ["Conjunto: MAT2027 Lançamento"], "th": 0 }
+        ],
+        "15": [
+          { "name": "MAT2027 — Feed (Lançamento)", "fmt": "Feed", "conversas": 16, "semana": 16, "custo": 8.31, "status": "ativo", "publico": ["Conjunto: MAT2027 Lançamento"], "th": 0 },
+          { "name": "Matrículas 2º sem — Diferenciais (Parque)", "fmt": "Feed", "conversas": 1, "semana": 1, "custo": 10.43, "status": "pausado", "publico": ["Conjunto: Matrículas 2º sem"], "th": 4 }
+        ],
+        "30": [
+          { "name": "MAT2027 — Feed (Lançamento)", "fmt": "Feed", "conversas": 16, "semana": 16, "custo": 8.31, "status": "ativo", "publico": ["Conjunto: MAT2027 Lançamento"], "th": 0 },
+          { "name": "Matrículas 2º sem — Diferenciais (Parque)", "fmt": "Feed", "conversas": 11, "semana": 11, "custo": 11.74, "status": "pausado", "publico": ["Conjunto: Matrículas 2º sem"], "th": 4 },
+          { "name": "Reels — Diferenciais (Estrutura)", "fmt": "Reels", "conversas": 3, "semana": 3, "custo": 17.25, "status": "pausado", "publico": ["Conjunto: Matrículas 2º sem"], "th": 3 },
+          { "name": "Matrículas 2º sem — Diferenciais (Parque) 2", "fmt": "Feed", "conversas": 3, "semana": 3, "custo": 10.02, "status": "pausado", "publico": ["Conjunto: Matrículas 2º sem"], "th": 5 }
+        ]
+      }
+    }
+  },
+  "leads": { "atualizado": "02/09", "centro": 2, "sul": 3, "barra": 2 }
+}

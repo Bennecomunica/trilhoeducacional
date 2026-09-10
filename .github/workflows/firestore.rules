@@ -1,0 +1,28 @@
+rules_version = '2';
+
+// Regras de acesso do Firestore para o Trilho Educacional.
+// - benne  (agência): acesso total às aprovações (criar, editar, apagar).
+// - colegio (cliente): só lê e só altera status/comentários de um criativo.
+//
+// Troque os e-mails abaixo pelos que você criar no Firebase Authentication.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function autenticado()  { return request.auth != null; }
+    function ehBenne()      { return autenticado() && request.auth.token.email == "benne@trilhoeducacional.app"; }
+    function ehColegio()    { return autenticado() && request.auth.token.email == "colegio@trilhoeducacional.app"; }
+
+    // Colégio só pode mexer em status e comentários (não muda verba, público, etc.)
+    function soStatusOuComentario() {
+      return request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['status', 'comments']);
+    }
+
+    match /aprovacoes/{id} {
+      allow read:   if autenticado();
+      allow create: if ehBenne();
+      allow delete: if ehBenne();
+      allow update: if ehBenne() || (ehColegio() && soStatusOuComentario());
+    }
+  }
+}
