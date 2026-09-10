@@ -425,8 +425,9 @@ body[data-role="aprovador"] .r-aprovador{display:revert}
         <span class="badge" id="apprBadge">0</span>
       </button>
       <div class="side-foot">
-        <strong style="color:var(--ink)">Dados de exemplo</strong><br>
-        Protótipo navegável. Os números serão substituídos pela integração com o Gerenciador do Meta.
+        <strong style="color:var(--ink)">Atualização automática</strong><br>
+        Dados do Meta e leads da planilha.<br>
+        <span id="footAtualizado" style="color:var(--muted)">Carregando…</span>
       </div>
     </aside>
 
@@ -1124,6 +1125,13 @@ function carregarDados(){
   fetch("dados.json?"+Date.now()).then(r=>r.json()).then(d=>{
     if(d.unidades){ Object.keys(DATA).forEach(k=>delete DATA[k]); Object.assign(DATA,d.unidades); }
     if(d.leads){ Object.assign(LEADS,d.leads); }
+    var fa=document.getElementById("footAtualizado");
+    if(fa){
+      if(d.atualizadoEm){
+        var dt=new Date(d.atualizadoEm);
+        fa.textContent="Atualizado em "+dt.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});
+      } else { fa.textContent=""; }
+    }
     if(document.getElementById("app").classList.contains("on")){ renderUnits(); render(); }
   }).catch(()=>{});
 }
